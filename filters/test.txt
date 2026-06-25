@@ -1,0 +1,11 @@
+! Ethereals N ADS — deterministic test ruleset (dev builds only)
+! Targets reserved .test TLDs so it can never affect real sites.
+! License: GPL-3.0
+||ads.test^
+||tracker.test^
+||cdn.test/ads/
+/bait.js$domain=bait.test
+ads.test###ad-banner
+ads.test##.ad-slot
+bait.test##.bait-wall
+bait.test#@#.legit-content

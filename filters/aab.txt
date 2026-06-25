@@ -1,0 +1,20 @@
+! Title: Ethereals N ADS: Anti-anti-adblock shield
+! Description: Defeats adblock-detector walls (bait elements, fetch/xhr bait,
+!   detector scripts). Curated from the sources below — see ATTRIBUTION.
+! License: GPL-3.0
+!
+! ATTRIBUTION (derived and curated from):
+!   - uBlock Origin uAssets "uBlock filters – Annoyances / annoyances-others"
+!     by uBlock Origin contributors — https://github.com/uBlockOrigin/uAssets (GPL-3.0)
+!   - uBlock Origin uAssets "quick-fixes" (GPL-3.0)
+!   - EasyList "Adblock Warning Removal List" by The EasyList authors
+!     — https://easylist.to/ (GPL-3.0-or-later OR CC BY-SA 3.0-or-later)
+!   - AdGuard Filters "Other Annoyances" — https://github.com/AdguardTeam/AdguardFilters (GPL-3.0)
+!
+! Seed rules — full curation lands in the AAB milestone.
+
+! Generic detector globals
+@@||ads.test^$generichide
+
+! Soft-block bait endpoints so the request "succeeds" harmlessly
+! (redirect resources are wired at the DNR layer by the engine)
