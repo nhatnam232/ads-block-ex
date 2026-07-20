@@ -1,0 +1,337 @@
+{
+    "extName": {
+        "message": "Ethereals N ADS",
+        "description": "Extension name shown in the browser UI."
+    },
+    "extShortDesc": {
+        "message": "A fast, privacy-first ad blocker. Cross-browser, no telemetry.",
+        "description": "Short description for the store and about page."
+    },
+    "mode_none": {
+        "message": "No filtering"
+    },
+    "mode_none_desc": {
+        "message": "Allow everything on this site"
+    },
+    "mode_basic": {
+        "message": "Basic"
+    },
+    "mode_basic_desc": {
+        "message": "Network ad blocking only"
+    },
+    "mode_optimal": {
+        "message": "Optimal"
+    },
+    "mode_optimal_desc": {
+        "message": "Blocking plus cosmetic filtering (recommended)"
+    },
+    "mode_complete": {
+        "message": "Complete"
+    },
+    "mode_complete_desc": {
+        "message": "Cosmetic filtering on every page (heaviest)"
+    },
+    "group_default": {
+        "message": "Core ad blocking"
+    },
+    "group_malware": {
+        "message": "Malware protection"
+    },
+    "group_regions": {
+        "message": "Regional"
+    },
+    "group_aab": {
+        "message": "Anti-adblock shield"
+    },
+    "group_media": {
+        "message": "Media players"
+    },
+    "group_annoyances": {
+        "message": "Annoyances"
+    },
+    "group_test": {
+        "message": "Test (dev builds only)"
+    },
+    "popup_grantTitle": {
+        "message": "Extra permission needed"
+    },
+    "popup_grantBtn": {
+        "message": "Grant permission for this site"
+    },
+    "popup_grantNote": {
+        "message": "Cosmetic filtering on this site needs read access to it. Nothing is collected."
+    },
+    "popup_toggleAds": {
+        "message": "Ad blocking"
+    },
+    "popup_toggleAdsStandard": {
+        "message": "Standard"
+    },
+    "popup_toggleAdsAggressive": {
+        "message": "Aggressive"
+    },
+    "popup_toggleCosmetic": {
+        "message": "Cosmetic filtering"
+    },
+    "popup_toggleAab": {
+        "message": "Anti-adblock shield"
+    },
+    "popup_toggleAnnoyances": {
+        "message": "Annoyances"
+    },
+    "popup_toggleHttps": {
+        "message": "HTTPS upgrades"
+    },
+    "popup_pauseSite": {
+        "message": "Pause on this site"
+    },
+    "popup_pauseEverywhere": {
+        "message": "Pause everywhere"
+    },
+    "popup_paused": {
+        "message": "Paused"
+    },
+    "popup_recentTitle": {
+        "message": "Recently blocked"
+    },
+    "popup_recentEmpty": {
+        "message": "Nothing blocked on this page yet"
+    },
+    "popup_recentUnavailable": {
+        "message": "Recent blocks are visible in dev builds or with the feedback permission."
+    },
+    "popup_options": {
+        "message": "Settings"
+    },
+    "popup_blockedHere": {
+        "message": "Blocked on this page"
+    },
+    "popup_lifetime": {
+        "message": "$total$ all time",
+        "description": "$total$ is the compacted lifetime block count, e.g. '1.2K all time'.",
+        "placeholders": {
+            "total": {
+                "content": "$1"
+            }
+        }
+    },
+    "popup_statusOn": {
+        "message": "Protecting this site"
+    },
+    "popup_statusOff": {
+        "message": "Off for this site"
+    },
+    "popup_powerOn": {
+        "message": "Turn filtering back on"
+    },
+    "popup_powerOff": {
+        "message": "Turn filtering off"
+    },
+    "popup_reloadNote": {
+        "message": "The page reloads when you change the mode"
+    },
+    "popup_browserPage": {
+        "message": "The extension cannot filter browser-internal pages"
+    },
+    "popup_apply": {
+        "message": "Apply"
+    },
+    "opt_title": {
+        "message": "Ethereals N ADS — Settings"
+    },
+    "opt_tabSettings": {
+        "message": "Settings"
+    },
+    "opt_tabLists": {
+        "message": "Filter lists"
+    },
+    "opt_tabMyRules": {
+        "message": "My rules"
+    },
+    "opt_tabCustom": {
+        "message": "Custom rules"
+    },
+    "opt_tabSites": {
+        "message": "Sites"
+    },
+    "opt_tabStats": {
+        "message": "Statistics"
+    },
+    "opt_tabDiag": {
+        "message": "Diagnostics"
+    },
+    "opt_tabAbout": {
+        "message": "About & backup"
+    },
+    "opt_defaultMode": {
+        "message": "Default filtering mode"
+    },
+    "opt_autoReload": {
+        "message": "Reload the page after mode changes"
+    },
+    "opt_badge": {
+        "message": "Show the block count on the toolbar icon"
+    },
+    "opt_aabProfile": {
+        "message": "Anti-adblock profile"
+    },
+    "opt_aabOff": {
+        "message": "Off"
+    },
+    "opt_aabStandard": {
+        "message": "Standard"
+    },
+    "opt_aabAggressive": {
+        "message": "Aggressive"
+    },
+    "opt_debug": {
+        "message": "Debug logging (console)"
+    },
+    "opt_modules": {
+        "message": "Site modules"
+    },
+    "opt_moduleYoutube": {
+        "message": "YouTube ad blocking"
+    },
+    "opt_moduleSpotify": {
+        "message": "Spotify web-player ad blocking (opt-in)"
+    },
+    "opt_spotifyNotice": {
+        "message": "Blocking audio ads in the Spotify web player may conflict with Spotify's Terms of Service. Understand the risk before enabling."
+    },
+    "opt_spotifyAccept": {
+        "message": "I understand — enable anyway"
+    },
+    "opt_quickfix": {
+        "message": "Quick-fix channel"
+    },
+    "opt_qfEnabled": {
+        "message": "Enable remote quick-fix updates"
+    },
+    "opt_qfUrl": {
+        "message": "Quick-fix list URL"
+    },
+    "opt_qfInterval": {
+        "message": "Refresh interval (hours)"
+    },
+    "opt_qfUpdate": {
+        "message": "Update now"
+    },
+    "opt_qfClear": {
+        "message": "Clear quick-fix rules"
+    },
+    "opt_saved": {
+        "message": "Saved"
+    },
+    "opt_listsName": {
+        "message": "Filter list"
+    },
+    "opt_listsRules": {
+        "message": "Rules"
+    },
+    "opt_listsEnabled": {
+        "message": "Enabled"
+    },
+    "opt_listsNote": {
+        "message": "At most 10 rulesets can be enabled at once (cross-browser budget)."
+    },
+    "opt_myPermanent": {
+        "message": "Permanent rules"
+    },
+    "opt_myTemporary": {
+        "message": "Temporary rules (until browser restart)"
+    },
+    "opt_myApply": {
+        "message": "Save & apply"
+    },
+    "opt_myErrors": {
+        "message": "Some lines could not be compiled:"
+    },
+    "opt_myHint": {
+        "message": "One filter per line, e.g. ||ads.example.com^ or ||example.com$domain=news.test"
+    },
+    "opt_customAdd": {
+        "message": "Add rule"
+    },
+    "opt_customPlaceholder": {
+        "message": "||example.com^"
+    },
+    "opt_customRemove": {
+        "message": "Remove"
+    },
+    "opt_customEmpty": {
+        "message": "No custom rules yet."
+    },
+    "opt_sitesHost": {
+        "message": "Site"
+    },
+    "opt_sitesMode": {
+        "message": "Mode"
+    },
+    "opt_sitesForget": {
+        "message": "Forget"
+    },
+    "opt_sitesEmpty": {
+        "message": "No per-site settings yet."
+    },
+    "opt_statsTotal": {
+        "message": "Total blocked"
+    },
+    "opt_statsAds": {
+        "message": "Ads"
+    },
+    "opt_statsTrackers": {
+        "message": "Trackers"
+    },
+    "opt_statsAab": {
+        "message": "Anti-adblock hits"
+    },
+    "opt_statsTop": {
+        "message": "Most-blocked sites"
+    },
+    "opt_statsEmpty": {
+        "message": "Nothing blocked yet."
+    },
+    "opt_diagBudgets": {
+        "message": "DNR budgets"
+    },
+    "opt_diagRules": {
+        "message": "Our dynamic & session rules"
+    },
+    "opt_diagRefresh": {
+        "message": "Refresh"
+    },
+    "opt_aboutBackup": {
+        "message": "Backup"
+    },
+    "opt_aboutBackupBtn": {
+        "message": "Download backup file"
+    },
+    "opt_aboutRestoreBtn": {
+        "message": "Restore from backup…"
+    },
+    "opt_aboutAttrib": {
+        "message": "Filter-list attributions"
+    },
+    "opt_aboutLicense": {
+        "message": "Ethereals N ADS is free software under GPL-3.0. Filter lists keep their own licenses, shown below."
+    },
+    "generic_error": {
+        "message": "Error"
+    },
+    "generic_ok": {
+        "message": "OK"
+    },
+    "opt_diagScriptlets": {
+        "message": "Registered site scriptlets"
+    },
+    "popup_grantOk": {
+        "message": "Granted — reloading…"
+    },
+    "popup_grantFail": {
+        "message": "No prompt appeared? Grant it manually: edge://extensions → Ethereals N ADS → Site access → On specific sites → add this site."
+    },
+    "opt_resync": {
+        "message": "Re-register now"
+    }
+}

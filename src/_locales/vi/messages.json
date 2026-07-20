@@ -1,0 +1,337 @@
+{
+    "extName": {
+        "message": "Ethereals N ADS",
+        "description": "Tên tiện ích hiển thị trên trình duyệt."
+    },
+    "extShortDesc": {
+        "message": "Trình chặn quảng cáo nhanh, đề cao quyền riêng tư. Dùng được trên nhiều trình duyệt, không thu thập dữ liệu.",
+        "description": "Mô tả ngắn cho cửa hàng tiện ích."
+    },
+    "mode_none": {
+        "message": "Không chặn"
+    },
+    "mode_none_desc": {
+        "message": "Cho phép mọi thứ trên trang này"
+    },
+    "mode_basic": {
+        "message": "Cơ bản"
+    },
+    "mode_basic_desc": {
+        "message": "Chỉ chặn quảng cáo qua mạng"
+    },
+    "mode_optimal": {
+        "message": "Tối ưu"
+    },
+    "mode_optimal_desc": {
+        "message": "Chặn mạng kèm lọc trang điểm (khuyên dùng)"
+    },
+    "mode_complete": {
+        "message": "Toàn diện"
+    },
+    "mode_complete_desc": {
+        "message": "Lọc trang điểm ở mọi trang (nặng nhất)"
+    },
+    "group_default": {
+        "message": "Chặn quảng cáo lõi"
+    },
+    "group_malware": {
+        "message": "Chống mã độc"
+    },
+    "group_regions": {
+        "message": "Theo vùng"
+    },
+    "group_aab": {
+        "message": "Khiên chống phát hiện chặn quảng cáo"
+    },
+    "group_media": {
+        "message": "Trình phát đa phương tiện"
+    },
+    "group_annoyances": {
+        "message": "Phiền toái"
+    },
+    "group_test": {
+        "message": "Kiểm thử (chỉ bản dev)"
+    },
+    "popup_grantTitle": {
+        "message": "Cần thêm quyền"
+    },
+    "popup_grantBtn": {
+        "message": "Cấp quyền cho trang này"
+    },
+    "popup_grantNote": {
+        "message": "Lọc trang điểm trên trang này cần quyền đọc nội dung. Chúng tôi không thu thập dữ liệu nào."
+    },
+    "popup_toggleAds": {
+        "message": "Chặn quảng cáo"
+    },
+    "popup_toggleAdsStandard": {
+        "message": "Chuẩn"
+    },
+    "popup_toggleAdsAggressive": {
+        "message": "Mạnh tay"
+    },
+    "popup_toggleCosmetic": {
+        "message": "Lọc trang điểm"
+    },
+    "popup_toggleAab": {
+        "message": "Khiên chống phát hiện"
+    },
+    "popup_toggleAnnoyances": {
+        "message": "Phiền toái"
+    },
+    "popup_toggleHttps": {
+        "message": "Nâng cấp HTTPS"
+    },
+    "popup_pauseSite": {
+        "message": "Tạm dừng ở trang này"
+    },
+    "popup_pauseEverywhere": {
+        "message": "Tạm dừng mọi nơi"
+    },
+    "popup_paused": {
+        "message": "Đã tạm dừng"
+    },
+    "popup_recentTitle": {
+        "message": "Vừa chặn"
+    },
+    "popup_recentEmpty": {
+        "message": "Chưa chặn gì trên trang này"
+    },
+    "popup_recentUnavailable": {
+        "message": "Danh sách vừa chặn chỉ hiển thị ở bản dev hoặc khi có quyền phản hồi."
+    },
+    "popup_options": {
+        "message": "Cài đặt"
+    },
+    "popup_blockedHere": {
+        "message": "Đã chặn trên trang này"
+    },
+    "popup_lifetime": {
+        "message": "tổng cộng $total$",
+        "description": "$total$ là tổng số lượt chặn, vd 'tổng cộng 1,2K'.",
+        "placeholders": {
+            "total": {
+                "content": "$1"
+            }
+        }
+    },
+    "popup_statusOn": {
+        "message": "Đang bảo vệ trang này"
+    },
+    "popup_statusOff": {
+        "message": "Đã tắt ở trang này"
+    },
+    "popup_powerOn": {
+        "message": "Bật lại tính năng chặn"
+    },
+    "popup_powerOff": {
+        "message": "Tắt tính năng chặn"
+    },
+    "popup_reloadNote": {
+        "message": "Trang sẽ được tải lại khi bạn đổi chế độ"
+    },
+    "popup_browserPage": {
+        "message": "Tiện ích không thể lọc các trang nội bộ của trình duyệt"
+    },
+    "popup_apply": {
+        "message": "Áp dụng"
+    },
+    "opt_title": {
+        "message": "Ethereals N ADS — Cài đặt"
+    },
+    "opt_tabSettings": {
+        "message": "Cài đặt"
+    },
+    "opt_tabLists": {
+        "message": "Danh sách lọc"
+    },
+    "opt_tabMyRules": {
+        "message": "Quy tắc của tôi"
+    },
+    "opt_tabCustom": {
+        "message": "Quy tắc tùy chỉnh"
+    },
+    "opt_tabSites": {
+        "message": "Trang web"
+    },
+    "opt_tabStats": {
+        "message": "Thống kê"
+    },
+    "opt_tabDiag": {
+        "message": "Chẩn đoán"
+    },
+    "opt_tabAbout": {
+        "message": "Giới thiệu & sao lưu"
+    },
+    "opt_defaultMode": {
+        "message": "Chế độ lọc mặc định"
+    },
+    "opt_autoReload": {
+        "message": "Tải lại trang sau khi đổi chế độ"
+    },
+    "opt_badge": {
+        "message": "Hiện số lượt chặn trên biểu tượng thanh công cụ"
+    },
+    "opt_aabProfile": {
+        "message": "Mức khiên chống phát hiện"
+    },
+    "opt_aabOff": {
+        "message": "Tắt"
+    },
+    "opt_aabStandard": {
+        "message": "Chuẩn"
+    },
+    "opt_aabAggressive": {
+        "message": "Mạnh tay"
+    },
+    "opt_debug": {
+        "message": "Ghi log chẩn đoán (console)"
+    },
+    "opt_modules": {
+        "message": "Module theo trang"
+    },
+    "opt_moduleYoutube": {
+        "message": "Chặn quảng cáo YouTube"
+    },
+    "opt_moduleSpotify": {
+        "message": "Chặn quảng cáo Spotify web (tự chọn)"
+    },
+    "opt_spotifyNotice": {
+        "message": "Chặn quảng cáo âm thanh trên Spotify web có thể mâu thuẫn với Điều khoản dịch vụ của Spotify. Hãy hiểu rủi ro trước khi bật."
+    },
+    "opt_spotifyAccept": {
+        "message": "Tôi đã hiểu — vẫn bật"
+    },
+    "opt_quickfix": {
+        "message": "Kênh vá nhanh"
+    },
+    "opt_qfEnabled": {
+        "message": "Bật cập nhật vá nhanh từ xa"
+    },
+    "opt_qfUrl": {
+        "message": "URL danh sách vá nhanh"
+    },
+    "opt_qfInterval": {
+        "message": "Chu kỳ làm mới (giờ)"
+    },
+    "opt_qfUpdate": {
+        "message": "Cập nhật ngay"
+    },
+    "opt_qfClear": {
+        "message": "Xóa các quy tắc vá nhanh"
+    },
+    "opt_saved": {
+        "message": "Đã lưu"
+    },
+    "opt_listsName": {
+        "message": "Danh sách lọc"
+    },
+    "opt_listsRules": {
+        "message": "Quy tắc"
+    },
+    "opt_listsEnabled": {
+        "message": "Bật"
+    },
+    "opt_listsNote": {
+        "message": "Chỉ bật được tối đa 10 bộ quy tắc cùng lúc (giới hạn đa trình duyệt)."
+    },
+    "opt_myPermanent": {
+        "message": "Quy tắc vĩnh viễn"
+    },
+    "opt_myTemporary": {
+        "message": "Quy tắc tạm thời (đến khi khởi động lại trình duyệt)"
+    },
+    "opt_myApply": {
+        "message": "Lưu & áp dụng"
+    },
+    "opt_myErrors": {
+        "message": "Một số dòng chưa dịch được thành quy tắc:"
+    },
+    "opt_myHint": {
+        "message": "Mỗi dòng một bộ lọc, ví dụ ||ads.example.com^ hoặc ||example.com$domain=news.test"
+    },
+    "opt_customAdd": {
+        "message": "Thêm quy tắc"
+    },
+    "opt_customPlaceholder": {
+        "message": "||example.com^"
+    },
+    "opt_customRemove": {
+        "message": "Xóa"
+    },
+    "opt_customEmpty": {
+        "message": "Chưa có quy tắc tùy chỉnh nào."
+    },
+    "opt_sitesHost": {
+        "message": "Trang"
+    },
+    "opt_sitesMode": {
+        "message": "Chế độ"
+    },
+    "opt_sitesForget": {
+        "message": "Quên"
+    },
+    "opt_sitesEmpty": {
+        "message": "Chưa có cài đặt theo trang nào."
+    },
+    "opt_statsTotal": {
+        "message": "Tổng số lượt chặn"
+    },
+    "opt_statsAds": {
+        "message": "Quảng cáo"
+    },
+    "opt_statsTrackers": {
+        "message": "Trình theo dõi"
+    },
+    "opt_statsAab": {
+        "message": "Lượt chặn phát hiện"
+    },
+    "opt_statsTop": {
+        "message": "Trang bị chặn nhiều nhất"
+    },
+    "opt_statsEmpty": {
+        "message": "Chưa chặn gì."
+    },
+    "opt_diagBudgets": {
+        "message": "Giới hạn DNR"
+    },
+    "opt_diagRules": {
+        "message": "Quy tắc dynamic & session của chúng tôi"
+    },
+    "opt_diagRefresh": {
+        "message": "Làm mới"
+    },
+    "opt_aboutBackup": {
+        "message": "Sao lưu"
+    },
+    "opt_aboutBackupBtn": {
+        "message": "Tải tệp sao lưu"
+    },
+    "opt_aboutRestoreBtn": {
+        "message": "Phục hồi từ sao lưu…"
+    },
+    "opt_aboutAttrib": {
+        "message": "Ghi công danh sách lọc"
+    },
+    "opt_aboutLicense": {
+        "message": "Ethereals N ADS là phần mềm tự do theo GPL-3.0. Các danh sách lọc giữ giấy phép riêng của chúng, ghi rõ bên dưới."
+    },
+    "generic_error": {
+        "message": "Lỗi"
+    },
+    "generic_ok": {
+        "message": "OK"
+    },
+    "opt_diagScriptlets": {
+        "message": "Scriptlet trang đã đăng ký"
+    },
+    "popup_grantOk": {
+        "message": "Đã cấp quyền — đang tải lại…"
+    },
+    "popup_grantFail": {
+        "message": "Không thấy hộp thoại? Cấp thủ công: edge://extensions → Ethereals N ADS → Quyền truy cập trang → Trên các trang cụ thể → thêm trang này."
+    },
+    "opt_resync": {
+        "message": "Đăng ký lại ngay"
+    }
+}
