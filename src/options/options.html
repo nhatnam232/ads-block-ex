@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ethereals N ADS</title>
+    <link rel="stylesheet" href="options.css">
+</head>
+<body>
+    <header class="topbar">
+        <img src="../img/icon_32.png" alt="" width="24" height="24">
+        <h1 data-i18n="opt_title">Ethereals N ADS — Settings</h1>
+    </header>
+
+    <nav class="tabs" id="tabs">
+        <button data-tab="settings" data-i18n="opt_tabSettings">Settings</button>
+        <button data-tab="lists" data-i18n="opt_tabLists">Filter lists</button>
+        <button data-tab="myrules" data-i18n="opt_tabMyRules">My rules</button>
+        <button data-tab="custom" data-i18n="opt_tabCustom">Custom rules</button>
+        <button data-tab="sites" data-i18n="opt_tabSites">Sites</button>
+        <button data-tab="stats" data-i18n="opt_tabStats">Statistics</button>
+        <button data-tab="diag" data-i18n="opt_tabDiag">Diagnostics</button>
+        <button data-tab="about" data-i18n="opt_tabAbout">About &amp; backup</button>
+    </nav>
+
+    <main>
+        <section id="tab-settings" class="panel">
+            <div class="card">
+                <h2 data-i18n="opt_defaultMode">Default filtering mode</h2>
+                <div class="field">
+                    <select id="defaultMode">
+                        <option value="basic" data-i18n="mode_basic">Basic</option>
+                        <option value="optimal" data-i18n="mode_optimal">Optimal</option>
+                        <option value="complete" data-i18n="mode_complete">Complete</option>
+                    </select>
+                </div>
+                <label class="check">
+                    <input type="checkbox" id="autoReload">
+                    <span data-i18n="opt_autoReload">Reload the page after mode changes</span>
+                </label>
+                <label class="check">
+                    <input type="checkbox" id="badgeEnabled">
+                    <span data-i18n="opt_badge">Show the block count on the toolbar icon</span>
+                </label>
+                <label class="check">
+                    <input type="checkbox" id="debugLogging">
+                    <span data-i18n="opt_debug">Debug logging (console)</span>
+                </label>
+            </div>
+
+            <div class="card">
+                <h2 data-i18n="opt_aabProfile">Anti-adblock profile</h2>
+                <div class="field">
+                    <select id="aabProfile">
+                        <option value="off" data-i18n="opt_aabOff">Off</option>
+                        <option value="standard" data-i18n="opt_aabStandard">Standard</option>
+                        <option value="aggressive" data-i18n="opt_aabAggressive">Aggressive</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2 data-i18n="opt_modules">Site modules</h2>
+                <label class="check">
+                    <input type="checkbox" id="moduleYoutube">
+                    <span data-i18n="opt_moduleYoutube">YouTube ad blocking</span>
+                </label>
+                <div class="module">
+                    <label class="check">
+                        <input type="checkbox" id="moduleSpotify">
+                        <span data-i18n="opt_moduleSpotify">Spotify web-player ad blocking (opt-in)</span>
+                    </label>
+                    <p class="notice" data-i18n="opt_spotifyNotice">…</p>
+                    <button id="spotifyAccept" class="ghost" data-i18n="opt_spotifyAccept">I understand</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2 data-i18n="opt_quickfix">Quick-fix channel</h2>
+                <label class="check">
+                    <input type="checkbox" id="qfEnabled">
+                    <span data-i18n="opt_qfEnabled">Enable remote quick-fix updates</span>
+                </label>
+                <div class="row">
+                    <label class="row-label" for="qfUrl" data-i18n="opt_qfUrl">URL</label>
+                    <input type="url" id="qfUrl" spellcheck="false">
+                </div>
+                <div class="row slim">
+                    <label class="row-label" for="qfInterval" data-i18n="opt_qfInterval">Interval</label>
+                    <input type="number" id="qfInterval" min="1" max="720">
+                </div>
+                <div class="btnrow">
+                    <button id="qfUpdate" class="primary" data-i18n="opt_qfUpdate">Update now</button>
+                    <button id="qfClear" class="danger" data-i18n="opt_qfClear">Clear quick-fix rules</button>
+                </div>
+            </div>
+
+            <p id="saveNote" class="muted save-note" aria-live="polite"></p>
+        </section>
+
+        <section id="tab-lists" class="panel" hidden>
+            <p class="muted" data-i18n="opt_listsNote">At most 10 rulesets…</p>
+            <table class="table" id="listsTable">
+                <thead>
+                    <tr>
+                        <th class="col-tight" data-i18n="opt_listsEnabled">Enabled</th>
+                        <th data-i18n="opt_listsName">Filter list</th>
+                        <th class="col-num" data-i18n="opt_listsRules">Rules</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </section>
+
+        <section id="tab-myrules" class="panel" hidden>
+            <div class="card">
+                <h2 data-i18n="opt_myPermanent">Permanent rules</h2>
+                <textarea id="myPermanent" rows="8" spellcheck="false"></textarea>
+            </div>
+            <div class="card">
+                <h2 data-i18n="opt_myTemporary">Temporary rules</h2>
+                <textarea id="myTemporary" rows="5" spellcheck="false"></textarea>
+            </div>
+            <div class="card">
+                <p class="muted" data-i18n="opt_myHint">one filter per line…</p>
+                <div class="btnrow">
+                    <button id="myApply" class="primary" data-i18n="opt_myApply">Save &amp; apply</button>
+                </div>
+                <div id="myErrors" class="errors" hidden>
+                    <p data-i18n="opt_myErrors">errors:</p>
+                    <ul></ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="tab-custom" class="panel" hidden>
+            <form id="customForm" class="custom-add">
+                <input id="customInput" type="text" spellcheck="false" data-i18n-placeholder="opt_customPlaceholder" placeholder="||example.com^">
+                <button class="primary" data-i18n="opt_customAdd">Add rule</button>
+            </form>
+            <p id="customError" class="errors-text"></p>
+            <table class="table" id="customTable">
+                <thead>
+                    <tr>
+                        <th class="col-tight" data-i18n="opt_listsEnabled">Enabled</th>
+                        <th>Rule</th>
+                        <th class="col-tight"></th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+            <p id="customEmpty" class="muted" data-i18n="opt_customEmpty">No custom rules yet.</p>
+        </section>
+
+        <section id="tab-sites" class="panel" hidden>
+            <table class="table" id="sitesTable">
+                <thead>
+                    <tr>
+                        <th data-i18n="opt_sitesHost">Site</th>
+                        <th data-i18n="opt_sitesMode">Mode</th>
+                        <th class="col-tight"></th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+            <p id="sitesEmpty" class="muted" data-i18n="opt_sitesEmpty">No per-site settings yet.</p>
+        </section>
+
+        <section id="tab-stats" class="panel" hidden>
+            <div class="stats-grid">
+                <div class="stat"><span class="stat-num" id="statTotal">0</span><span class="stat-label" data-i18n="opt_statsTotal">Total blocked</span></div>
+                <div class="stat"><span class="stat-num" id="statAds">0</span><span class="stat-label" data-i18n="opt_statsAds">Ads</span></div>
+                <div class="stat"><span class="stat-num" id="statTrackers">0</span><span class="stat-label" data-i18n="opt_statsTrackers">Trackers</span></div>
+                <div class="stat"><span class="stat-num" id="statAab">0</span><span class="stat-label" data-i18n="opt_statsAab">Anti-adblock hits</span></div>
+            </div>
+            <h2 data-i18n="opt_statsTop">Most-blocked sites</h2>
+            <ol id="statsTop" class="toplist"></ol>
+            <p id="statsEmpty" class="muted" data-i18n="opt_statsEmpty" hidden>Nothing blocked yet.</p>
+        </section>
+
+        <section id="tab-diag" class="panel" hidden>
+            <div class="card">
+                <h2 data-i18n="opt_diagBudgets">DNR budgets</h2>
+                <pre id="diagBudgets" class="pre"></pre>
+            </div>
+            <div class="card">
+                <h2 data-i18n="opt_diagRules">Our dynamic &amp; session rules</h2>
+                <pre id="diagRules" class="pre"></pre>
+            </div>
+            <div class="card">
+                <h2 data-i18n="opt_diagScriptlets">Registered site scriptlets</h2>
+                <pre id="diagScriptlets" class="pre"></pre>
+                <div class="btnrow">
+                    <button id="scriptletResync" class="primary" data-i18n="opt_resync">Re-register now</button>
+                    <button id="diagRefresh" data-i18n="opt_diagRefresh">Refresh</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="tab-about" class="panel" hidden>
+            <p data-i18n="opt_aboutLicense">GPL-3.0…</p>
+
+            <div class="card">
+                <h2 data-i18n="opt_aboutBackup">Backup</h2>
+                <div class="btnrow">
+                    <button id="backupBtn" class="primary" data-i18n="opt_aboutBackupBtn">Download backup file</button>
+                    <button id="restoreBtn" class="ghost" data-i18n="opt_aboutRestoreBtn">Restore…</button>
+                    <input type="file" id="restoreFile" accept="application/json" hidden>
+                </div>
+                <p id="restoreNote" class="errors-text" aria-live="polite"></p>
+            </div>
+
+            <div class="card">
+                <h2 data-i18n="opt_aboutAttrib">Filter-list attributions</h2>
+                <ul id="attribList" class="toplist"></ul>
+                <p class="muted">
+                    Ruleset compiler: <a href="https://github.com/gorhill/uBlock" target="_blank" rel="noreferrer">uBlock Origin</a>
+                    (GPL-3.0, © Raymond Hill &amp; contributors), invoked at build time.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <script type="module" src="options.js"></script>
+</body>
+</html>

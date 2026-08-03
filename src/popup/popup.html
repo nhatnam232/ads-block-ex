@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ethereals N ADS</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <header id="header">
+        <img src="../img/icon_32.png" alt="" width="22" height="22">
+        <div id="host" class="host">—</div>
+        <button id="optionsBtn" class="icon-btn" data-i18n-title="popup_options" title="Settings">⚙</button>
+    </header>
+
+    <p id="browserWarning" class="warning" data-i18n="popup_browserPage" hidden>
+        The extension cannot filter browser-internal pages
+    </p>
+
+    <main id="content">
+        <section class="hero" aria-labelledby="blockedLabel">
+            <button id="powerBtn" class="power" aria-pressed="true" title="">
+                <span class="power-ring"></span>
+                <svg class="power-glyph" viewBox="0 0 24 24" width="30" height="30" aria-hidden="true">
+                    <path class="glyph-shield" d="M12 2 4 5v6c0 5 3.4 9.3 8 11 4.6-1.7 8-6 8-11V5l-8-3z"/>
+                    <path class="glyph-bolt" d="M12.8 7.5 9.5 12.6h2l-.9 3.9 3.4-5.2h-2.1l.9-3.8z"/>
+                </svg>
+            </button>
+            <div id="powerState" class="power-state" aria-live="polite">—</div>
+
+            <div class="hero-num" id="blockedCount">0</div>
+            <div class="hero-label" id="blockedLabel" data-i18n="popup_blockedHere">Blocked on this page</div>
+            <div class="hero-sub muted" id="blockedTotal"></div>
+        </section>
+
+        <section id="grantSection" class="grant" hidden>
+            <strong data-i18n="popup_grantTitle">Extra permission needed</strong>
+            <p class="muted" data-i18n="popup_grantNote">…</p>
+            <button id="grantBtn" class="primary" data-i18n="popup_grantBtn">Grant</button>
+            <p id="grantResult" class="grant-result" aria-live="polite"></p>
+        </section>
+
+        <nav id="modes" class="modes segmented" role="radiogroup" aria-label="Filtering mode">
+            <button class="seg" data-mode="none" data-i18n="mode_none">No filtering</button>
+            <button class="seg" data-mode="basic" data-i18n="mode_basic">Basic</button>
+            <button class="seg" data-mode="optimal" data-i18n="mode_optimal">Optimal</button>
+            <button class="seg" data-mode="complete" data-i18n="mode_complete">Complete</button>
+        </nav>
+
+        <section id="toggles" class="toggles">
+            <label class="row">
+                <span data-i18n="popup_toggleAds">Ad blocking</span>
+                <select id="adsLevel">
+                    <option value="standard" data-i18n="popup_toggleAdsStandard">Standard</option>
+                    <option value="aggressive" data-i18n="popup_toggleAdsAggressive">Aggressive</option>
+                </select>
+            </label>
+            <label class="row">
+                <span data-i18n="popup_toggleAab">Anti-adblock shield</span>
+                <input type="checkbox" id="tglAab">
+            </label>
+            <label class="row">
+                <span data-i18n="popup_toggleAnnoyances">Annoyances</span>
+                <input type="checkbox" id="tglAnnoyances">
+            </label>
+        </section>
+
+        <section class="actions">
+            <button id="pauseSiteBtn" data-i18n="popup_pauseSite">Pause on this site</button>
+            <button id="pauseEverywhereBtn" data-i18n="popup_pauseEverywhere">Pause everywhere</button>
+        </section>
+
+        <section class="recent">
+            <h2 data-i18n="popup_recentTitle">Recently blocked</h2>
+            <ul id="recentList" class="recent-list"></ul>
+            <p id="recentEmpty" class="muted" data-i18n="popup_recentEmpty" hidden>…</p>
+        </section>
+    </main>
+
+    <footer>
+        <span class="muted" id="reloadNote" data-i18n="popup_reloadNote">…</span>
+    </footer>
+
+    <script type="module" src="popup.js"></script>
+</body>
+</html>
