@@ -1,0 +1,41 @@
+! Title: Ethereals N ADS: Spotify web player ads
+! Description: Opt-in module — audio-ad removal for open.spotify.com.
+!   Response-patching scriptlet (cdnurl → silent MP3) is a packaged MAIN-world
+!   bundle — see src/scriptlets/site/spotify-patcher.js. NEVER block
+!   spclient.wg.spotify.com or spotifycdn.com wholesale (breaks the player).
+! License: GPL-3.0
+!
+! ATTRIBUTION (techniques derived from, verified working Sept 2026):
+!   - uBlock Origin community uAssets issue #22198 (storage-resolve patching)
+!   - abba23/spotify-adblock config.toml (endpoint list)
+!   - AdGuard "Spotify Ad Shield" DNR rules (2026)
+!   - SpotiShush (data-testadtype detection signal)
+!   - tomer8007/spotify-web-ads-remover — state-machine rewiring
+!     technique (GPL-3.0) — https://github.com/tomer8007/spotify-web-ads-remover
+! Not included: duo-ads / ads-helpers rules (unverified endpoints — zero
+!   public footprint; confirm via live capture before shipping).
+
+! Dedicated ad/telemetry hosts
+||adeventtracker.spotify.com^
+||adeventtracker-us.spotify.com^
+||adeventtracker-s-east.spotify.com^
+||log.spotify.com^
+||ads-fa.spotify.com^
+||pixel.byspotify.com^
+
+! Audio-ad CDN paths
+||creativeservice-production.scdn.co/mp3-ad/^
+||adstudio-assets.scdn.co^
+||audio-ak-spotify-com.akamaized.net/ad/^
+
+! Path-scoped rules on the shared API gateway (never block the host itself)
+spclient.wg.spotify.com/ads/$xhr,domain=open.spotify.com
+spclient.wg.spotify.com/ad-logic/$xhr,domain=open.spotify.com
+spclient.wg.spotify.com/v1/ads/$xhr,domain=open.spotify.com
+spclient.wg.spotify.com/gabo-receiver-service/$xhr,domain=open.spotify.com
+
+! Cosmetic tier
+open.spotify.com###leaderboard-ad-element
+open.spotify.com##[data-testid*="hpto"]
+open.spotify.com##[data-testid*="home-ad-"]
+open.spotify.com##.billboard-ad
