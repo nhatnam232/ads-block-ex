@@ -1,0 +1,31 @@
+! Title: Ethereals N ADS: YouTube ads
+! Description: Network + cosmetic tier for youtube.com. Scriptlet tiers
+!   (json-prune family, request shaper, SSAI skipper) are injected by the
+!   engine as packaged MAIN-world bundles — see src/scriptlets/site/.
+! License: GPL-3.0
+!
+! ATTRIBUTION (techniques derived from, verified working Sept 2026):
+!   - uBlock Origin uAssets filters/quick-fixes.txt + filters.txt (GPL-3.0)
+!   - AdGuard Base filter filter 2 — https://filters.adtidy.org (GPL-3.0)
+!   - iter.ca research (isInlinePlaybackNoAd)
+! Deliberately EXCLUDED: googlevideo.com expire-timestamp heuristics
+!   (EasyList issue #22375 — global playback breakage risk).
+
+! Network tier
+||youtube.com/youtubei/v1/player/ad_break$xhr
+||googlevideo.com/initplayback?source=youtube&*c=TVHTML5&*oad$xhr,domain=youtube.com
+
+! Cosmetic tier (display ads)
+youtube.com###masthead-ad
+youtube.com##.video-ads
+youtube.com##.ytp-ad-module
+youtube.com##.ytp-ad-progress-list
+youtube.com##.ytp-ad-overlay-container
+youtube.com##ytd-display-ad-renderer
+youtube.com##ytd-promoted-sparkles-web-renderer
+youtube.com##ytd-promoted-video-renderer
+youtube.com##ytd-search-pyv-renderer
+youtube.com##YTD-AD-SLOT-RENDERER
+youtube.com,youtube-nocookie.com##ytd-ad-slot-renderer
+! exception needed on some YouTube surfaces
+youtube.com#@##player-ads

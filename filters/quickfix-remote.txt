@@ -1,0 +1,7 @@
+! Title: Ethereals N ADS: Quick-fix channel (seed)
+! Description: Seed of the remote quick-fix list. In production the engine
+!   fetches the pinned URL weekly as DATA and compiles it into dynamic rules
+!   (id range 3000-4499) — scriptlet code is always packaged, only
+!   names+args travel as data.
+! License: GPL-3.0
+! (empty seed — populated when the channel goes live)
