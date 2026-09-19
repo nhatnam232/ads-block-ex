@@ -1,4 +1,4 @@
-// per-site filtering modes (uBOL semantics) - part of Ethereals N ADS (GPL-3.0).
+// per-site filtering modes (uBOL semantics) - part of Ethereals N ADS (GPL-3.0). Copyright (C) 2026 nhatnam232.
 
 import { api } from './ext-compat.js';
 import { PRIORITY, RULE_ID, MODES } from './constants.js';

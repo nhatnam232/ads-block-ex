@@ -1,4 +1,4 @@
-// options-page logic — part of Ethereals N ADS (GPL-3.0).
+// options-page logic — part of Ethereals N ADS (GPL-3.0). Copyright (C) 2026 nhatnam232.
 
 import { MSG, RULESET_GROUPS } from '../js/constants.js';
 import { api } from '../js/ext-compat.js';

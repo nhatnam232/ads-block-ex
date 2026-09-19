@@ -1,4 +1,4 @@
-// per-tab block tallies + durable stats — part of Ethereals N ADS (GPL-3.0).
+// per-tab block tallies + durable stats — part of Ethereals N ADS (GPL-3.0). Copyright (C) 2026 nhatnam232.
 
 import { RULESET_GROUPS, STORAGE_KEYS } from './constants.js';
 import { api, isFirefox } from './ext-compat.js';

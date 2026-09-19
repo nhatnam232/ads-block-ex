@@ -1,4 +1,4 @@
-// typed storage helpers - part of Ethereals N ADS (GPL-3.0).
+// typed storage helpers - part of Ethereals N ADS (GPL-3.0). Copyright (C) 2026 nhatnam232.
 
 import { DEFAULT_SETTINGS, STORAGE_KEYS } from './constants.js';
 import { api } from './ext-compat.js';

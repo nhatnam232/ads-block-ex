@@ -1,4 +1,4 @@
-// constants & contracts — part of Ethereals N ADS (GPL-3.0).
+// constants & contracts — part of Ethereals N ADS (GPL-3.0). Copyright (C) 2026 nhatnam232.
 
 // Conservative cross-browser floors (Chrome vs Firefox differ; always take
 // Math.min with the values probed at runtime via declarativeNetRequest.* —

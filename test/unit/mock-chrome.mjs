@@ -5,7 +5,7 @@
  * globalThis.chrome at module-evaluation time, so the mock must exist before
  * any src module is imported.
  *
- * Part of Ethereals N ADS, licensed GPL-3.0.
+ * Part of Ethereals N ADS, licensed GPL-3.0. Copyright (C) 2026 nhatnam232.
  ******************************************************************************/
 
 // chrome.storage areas are dual-mode: callback-style OR promise-returning

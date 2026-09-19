@@ -1,4 +1,4 @@
-// host-permission tracking - part of Ethereals N ADS (GPL-3.0).
+// host-permission tracking - part of Ethereals N ADS (GPL-3.0). Copyright (C) 2026 nhatnam232.
 
 import { permissionsApi } from './ext-compat.js';
 

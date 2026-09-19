@@ -1,4 +1,4 @@
-// Spotify web-player ad patcher v2 (MAIN world) — part of Ethereals N ADS (GPL-3.0).
+// Spotify web-player ad patcher v2 (MAIN world) — part of Ethereals N ADS (GPL-3.0). Copyright (C) 2026 nhatnam232.
 
 (() => {
     if (location.hostname !== 'open.spotify.com') { return; }

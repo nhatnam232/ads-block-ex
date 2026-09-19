@@ -1,4 +1,4 @@
-// popup logic (VPN-style hero + controls) — part of Ethereals N ADS (GPL-3.0).
+// popup logic (VPN-style hero + controls) — part of Ethereals N ADS (GPL-3.0). Copyright (C) 2026 nhatnam232.
 
 import { MSG, MODES } from '../js/constants.js';
 import { api, permissionsApi, tabs } from '../js/ext-compat.js';

@@ -10,7 +10,7 @@
  * Skips with exit 0 (and a loud warning) when offline so `npm test` stays
  * usable on machines without connectivity — unit tests remain the gate.
  *
- * Part of Ethereals N ADS, licensed GPL-3.0.
+ * Part of Ethereals N ADS, licensed GPL-3.0. Copyright (C) 2026 nhatnam232.
  ******************************************************************************/
 
 import fs from 'node:fs';

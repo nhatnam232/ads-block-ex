@@ -1,4 +1,4 @@
-// dynamic/session DNR rule store (single writer) - part of Ethereals N ADS (GPL-3.0).
+// dynamic/session DNR rule store (single writer) - part of Ethereals N ADS (GPL-3.0). Copyright (C) 2026 nhatnam232.
 
 import { RULE_ID } from './constants.js';
 import { dnr, probeCaps } from './ext-compat.js';

@@ -1,4 +1,4 @@
-// browser/API compatibility layer — part of Ethereals N ADS (GPL-3.0).
+// browser/API compatibility layer — part of Ethereals N ADS (GPL-3.0). Copyright (C) 2026 nhatnam232.
 
 import { RUNTIME_CAPS } from './constants.js';
 

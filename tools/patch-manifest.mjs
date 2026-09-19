@@ -14,7 +14,7 @@
  *   3. dev mode — add declarativeNetRequestFeedback permission (chromium),
  *      enable the test-1 ruleset, switch the gecko id to the dev id.
  *
- * Part of Ethereals N ADS, licensed GPL-3.0.
+ * Part of Ethereals N ADS, licensed GPL-3.0. Copyright (C) 2026 nhatnam232.
  ******************************************************************************/
 
 import fs from 'node:fs';

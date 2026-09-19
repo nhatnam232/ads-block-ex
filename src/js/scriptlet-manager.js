@@ -1,4 +1,4 @@
-// site scriptlet manager (v2 slice) — part of Ethereals N ADS (GPL-3.0).
+// site scriptlet manager (v2 slice) — part of Ethereals N ADS (GPL-3.0). Copyright (C) 2026 nhatnam232.
 
 import { api, scripting } from './ext-compat.js';
 import { getSettings } from './storage.js';

@@ -4,7 +4,7 @@
  * Draws a two-tone shield at each size with 4x supersampling and writes
  * valid PNGs (IHDR/IDAT/IEND with CRC32, zlib-deflated scanlines).
  *
- * Part of Ethereals N ADS, licensed GPL-3.0.
+ * Part of Ethereals N ADS, licensed GPL-3.0. Copyright (C) 2026 nhatnam232.
  ******************************************************************************/
 
 import fs from 'node:fs';

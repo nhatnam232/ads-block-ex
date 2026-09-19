@@ -1,4 +1,4 @@
-// background entry point — part of Ethereals N ADS (GPL-3.0).
+// background entry point — part of Ethereals N ADS (GPL-3.0). Copyright (C) 2026 nhatnam232.
 
 import { api, isFirefox, initBadge, dnr, tabs, scripting, userScriptsAvailable } from './ext-compat.js';
 import {

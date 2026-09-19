@@ -1,4 +1,4 @@
-// user rule mini-compiler (filter text → DNR rule) — part of Ethereals N ADS (GPL-3.0).
+// user rule mini-compiler (filter text → DNR rule) — part of Ethereals N ADS (GPL-3.0). Copyright (C) 2026 nhatnam232.
 
 import { PRIORITY } from './constants.js';
 

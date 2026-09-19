@@ -11,7 +11,7 @@ shared code base.
   revocation is re-checked continuously.
 - **No telemetry. No remote code.** Filter lists are data; scriptlet code is
   always packaged.
-- **Zero npm dependencies.** Build tooling is plain Node stdlib; the ruleset
+- **Zero runtime dependencies** (eslint is dev-only for lint). Build tooling is plain Node stdlib; the ruleset
   compiler is uBlock Origin's, borrowed at build time (see
   `tools/vendored-README.md`).
 

@@ -15,7 +15,7 @@
  * (GPL-3.0, © Raymond Hill, modified for Ethereals N ADS) — see
  * tools/vendored-README.md for the exact provenance and modifications.
  *
- * This file is part of Ethereals N ADS, licensed GPL-3.0.
+ * This file is part of Ethereals N ADS, licensed GPL-3.0. Copyright (C) 2026 nhatnam232.
  ******************************************************************************/
 
 import { createHash } from 'node:crypto';

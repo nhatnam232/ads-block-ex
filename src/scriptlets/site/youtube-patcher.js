@@ -1,4 +1,4 @@
-// YouTube ad patcher (MAIN world) — part of Ethereals N ADS (GPL-3.0).
+// YouTube ad patcher (MAIN world) — part of Ethereals N ADS (GPL-3.0). Copyright (C) 2026 nhatnam232.
 
 (() => {
     const host = location.hostname;
