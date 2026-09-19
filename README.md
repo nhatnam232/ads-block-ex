@@ -1,8 +1,10 @@
 # Ethereals N ADS
 
+Copyright (C) 2026 nhatnam232 (jades) <kobitnx223@gmail.com>. **GPL-3.0** — see `LICENSE`.
+
 A fast, privacy-first, cross-browser ad blocker in the spirit of Brave
 Shields and uBlock Origin Lite. Chrome MV3 **and** Firefox MV3 from one
-shared code base. **GPL-3.0.**
+shared code base.
 
 - **No host permissions at install** (Chrome): per-site origins are granted
   from the popup, uBOL-style. Firefox grants `<all_urls>` at install but
