@@ -1,0 +1,17 @@
+{
+  "name": "ethereals-n-ads",
+  "version": "0.1.0",
+  "private": true,
+  "author": "nhatnam232 (jades) <kobitnx223@gmail.com>",
+  "description": "Ethereals N ADS — a Brave-Shields-style cross-browser ad blocker (Chrome MV3 + Firefox MV3). GPL-3.0.",
+  "type": "module",
+  "scripts": {
+    "build": "node tools/build.mjs compile chromium && node tools/build.mjs compile firefox",
+    "assets": "node tools/build.mjs assets",
+    "test": "node --test test/unit/*.test.js && node test/e2e/run.mjs"
+  },
+  "license": "GPL-3.0",
+  "devDependencies": {
+    "eslint": "^9.0.0"
+  }
+}

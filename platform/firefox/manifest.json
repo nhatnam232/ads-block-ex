@@ -1,0 +1,75 @@
+{
+  "action": {
+    "default_area": "navbar",
+    "default_icon": {
+      "16": "img/icon_16.png",
+      "32": "img/icon_32.png",
+      "64": "img/icon_64.png",
+      "128": "img/icon_128.png"
+    },
+    "default_popup": "popup/popup.html",
+    "default_title": "__MSG_extName__"
+  },
+  "author": "nhatnam232 (jades) <kobitnx223@gmail.com>",
+  "background": {
+    "scripts": [
+      "/js/background.js"
+    ],
+    "type": "module"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "ethereals-n-ads@ethereals.invalid",
+      "strict_min_version": "128.0",
+      "data_collection_permissions": {
+        "required": [
+          "none"
+        ]
+      }
+    }
+  },
+  "default_locale": "en",
+  "description": "__MSG_extShortDesc__",
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "icons": {
+    "16": "img/icon_16.png",
+    "32": "img/icon_32.png",
+    "64": "img/icon_64.png",
+    "128": "img/icon_128.png"
+  },
+  "manifest_version": 3,
+  "name": "__MSG_extName__",
+  "optional_permissions": [
+    "userScripts",
+    "webRequest",
+    "webRequestBlocking",
+    "webRequestFilterResponse"
+  ],
+  "options_ui": {
+    "open_in_tab": true,
+    "page": "options/options.html"
+  },
+  "permissions": [
+    "activeTab",
+    "alarms",
+    "declarativeNetRequest",
+    "scripting",
+    "storage",
+    "unlimitedStorage"
+  ],
+  "short_name": "Ethereals",
+  "version": "0.1.0",
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "/web_accessible_resources/*"
+      ],
+      "matches": [
+        "http://*/*",
+        "https://*/*"
+      ]
+    }
+  ]
+}
