@@ -15,7 +15,7 @@ test('getWithDefaults deep-merges nested defaults with stored values', async () 
     const s = await getSettings();
     assert.equal(s.defaultMode, 'complete');           // stored wins
     assert.equal(s.modules.youtube, false);            // stored nested wins
-    assert.equal(s.modules.spotify, false);            // default fills the rest
+    assert.equal(s.modules.spotify, true);             // on out of the box, no clicks
     assert.equal(s.quickFix.intervalHours, 168);       // default nested object
     assert.equal(s.defaultToggles.aab, true);
 });

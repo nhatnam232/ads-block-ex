@@ -27,16 +27,16 @@ const freshSettings = () => structuredClone(DEFAULT_SETTINGS);
 
 beforeEach(() => reset());
 
-test('default policy: core+malware+regions+aab+youtube on, annoyances+spotify off', () => {
+test('default policy: core+malware+regions+aab+youtube+spotify on, annoyances off', () => {
     const enabled = computePolicy(freshSettings(), { builtin: {}, custom: [] }, DETAILS);
     assert.ok(enabled.includes('easylist'));
     assert.ok(enabled.includes('urlhaus-full'));
     assert.ok(enabled.includes('aab-1'));
     assert.ok(enabled.includes('youtube-1'));
     assert.ok(!enabled.includes('ublock-annoyances-cookies'));
-    assert.ok(!enabled.includes('spotify-1'));
+    assert.ok(enabled.includes('spotify-1'));
     assert.ok(!enabled.includes('test-1'));
-    assert.equal(enabled.length, 9);
+    assert.equal(enabled.length, 10);
 });
 
 test('ads toggle off kills default+malware+regions but keeps modules', () => {

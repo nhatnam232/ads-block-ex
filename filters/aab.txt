@@ -11,10 +11,24 @@
 !     — https://easylist.to/ (GPL-3.0-or-later OR CC BY-SA 3.0-or-later)
 !   - AdGuard Filters "Other Annoyances" — https://github.com/AdguardTeam/AdguardFilters (GPL-3.0)
 !
-! Seed rules — full curation lands in the AAB milestone.
+! Seed rules + generic detector-script batch (network-level, all sites).
+! Site-specific DOM-bait walls still need per-site rules (upstream
+! quick-fixes/annoyances lists cover most; add leftovers here).
 
 ! Generic detector globals
 @@||ads.test^$generichide
+
+! Common adblock-detector libraries (BlockAdBlock/fuckadblock family
+! and generic detector filenames). Path-substring + third-party scoped
+! to avoid false positives on first-party bundles.
+/blockadblock.$script,third-party
+/fuckadblock.$script,third-party
+/adblock_detector.$script,third-party
+/adblock-detector.$script,third-party
+/adblockchecker.$script,third-party
+/adblock-checker.$script,third-party
+||blockadblock.com^$third-party
+||cdn.blockadblock.com^$third-party
 
 ! Soft-block bait endpoints so the request "succeeds" harmlessly
 ! (redirect resources are wired at the DNR layer by the engine)

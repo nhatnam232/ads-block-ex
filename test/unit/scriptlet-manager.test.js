@@ -12,13 +12,13 @@ const spotifyOn = () => {
     return s;
 };
 
-test('spotify bundle is off by default (module + ToS gates)', () => {
-    assert.equal(computeRegistrations(structuredClone(DEFAULT_SETTINGS), ['*://*.open.spotify.com/*'], false).length, 0);
+test('spotify bundle is on by default (no clicks needed)', () => {
+    assert.equal(computeRegistrations(structuredClone(DEFAULT_SETTINGS), ['*://*.open.spotify.com/*'], false).length, 1);
 });
 
-test('module on but ToS not acknowledged → still off', () => {
+test('explicit ToS opt-out still disables it', () => {
     const s = structuredClone(DEFAULT_SETTINGS);
-    s.modules.spotify = true;
+    s.modules.spotifyNoticeAccepted = false;
     assert.equal(computeRegistrations(s, ['*://*.open.spotify.com/*'], false).length, 0);
 });
 

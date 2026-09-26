@@ -91,8 +91,10 @@ export const DEFAULT_SETTINGS = {
     aabProfile: 'standard',         // 'off' | 'standard' | 'aggressive'
     modules: {
         youtube: true,
-        spotify: false,             // opt-in (ToS notice required)
-        spotifyNoticeAccepted: false,
+        // on out of the box: no per-site Grant clicks, no ToS accept click.
+        // (Install-time <all_urls> covers the injection; see manifest.)
+        spotify: true,
+        spotifyNoticeAccepted: true,
     },
     quickFix: {
         enabled: false,             // remote data channel (pinned URL)

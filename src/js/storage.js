@@ -44,6 +44,13 @@ export async function getSettings() {
     s.defaultToggles = { ...DEFAULT_SETTINGS.defaultToggles, ...s.defaultToggles };
     s.modules = { ...DEFAULT_SETTINGS.modules, ...s.modules };
     s.quickFix = { ...DEFAULT_SETTINGS.quickFix, ...s.quickFix };
+    // one-way upgrade for profiles created before the no-clicks change:
+    // the Spotify ToS is pre-accepted, so the patcher runs without any click.
+    // Fresh installs already get this from DEFAULT_SETTINGS.
+    if (s.modules.spotifyNoticeAccepted !== true) {
+        s.modules.spotifyNoticeAccepted = true;
+        await local.set(STORAGE_KEYS.settings, s).catch(() => {});
+    }
     return s;
 }
 
